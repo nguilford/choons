@@ -1,0 +1,26 @@
+{
+  "name": "choons-frontend",
+  "description": "Front end for the Choons web app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "browser-bunyan": "^0.4.0",
+    "create-react-class": "^15.6.2",
+    "fixed-data-table-2": "^0.8.6",
+    "json-loader": "^0.5.7",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-router": "^3.2.0",
+    "react-scripts": "1.0.17",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "webpack-convict": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

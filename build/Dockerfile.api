@@ -1,0 +1,28 @@
+FROM node:8
+
+WORKDIR /
+
+COPY api/src /src
+COPY api/database /database
+COPY api/package.json /package.json
+COPY api/package-lock.json /package-lock.json
+COPY api/.babelrc /.babelrc
+
+RUN apt-get update && \
+    apt-get install -y \
+      curl \
+      apt-utils \
+      apt-transport-https \
+      mysql-client
+
+# Install yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && \
+    apt-get install -y yarn
+
+RUN yarn install
+
+EXPOSE 8080
+
+CMD ["yarn", "run", "start"]
