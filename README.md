@@ -1,7 +1,7 @@
 Choons Web App
 =========
 
-A sample web application that allows a user to manage songs in their library. This is just a demonstration of an integration between a React front end and a Nodejs-based REST API backend. As is, the app consists of a simple React server on the front end that retrieves a list of songs associated with a hard-coded user via a Hapi-based API on the backend. Those songs are then rendered in the browser in a table that allows you to click column headings to sort by any field. You may also filter by song title, artist, and album. Note that this is a preset list of songs served from a database behind the API. While you cannot add to the master list of songs or to a user's list of songs via the UI, you may do so via the API using curl if you feel so inclined.  
+A sample web application that allows a user to manage songs in their music library. This is just a demonstration of an integration between a React front end and a Nodejs-based REST API backend. The app consists of a simple React server on the front end that retrieves a list of songs associated with a hard-coded user via a Hapi-based API on the backend. Those songs are then rendered in the browser in a table that allows you to click column headings to sort by any field. You may also filter by song title, artist, and album. Note that this is a preset list of songs served from a database behind the API. While you cannot add to the master list of songs or to a user's list of songs via the UI, you may do so via the API using curl if you feel so inclined.  
 
 The backend was created using [this templating tool](https://github.com/nguilford/node-project).
 
